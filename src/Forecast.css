@@ -1,0 +1,12 @@
+.card {
+  color: black;
+  margin: auto;
+  background-color: transparent;
+}
+.card-text {
+  text-align: center;
+}
+
+.dayCard {
+  margin: 1px;
+}
