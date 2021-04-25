@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Search from "./Search";
-import Overview from "./Overview";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 
@@ -14,7 +13,6 @@ function App() {
         <div className="mb-3">
           <Search />
         </div>
-        <Overview />
         <Forecast />
       </div>
       <Footer />

@@ -2,3 +2,20 @@ input,
 button {
   border-radius: 5px;
 }
+h1 {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+h2 {
+  display: inline-block;
+}
+li {
+  list-style: none;
+}
+li::first-letter {
+  text-transform: capitalize;
+}
+.units {
+  position: relative;
+  top: -10px;
+}
