@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="container-link">
       <small>
         <a
-          href="https://github.com/Ivanceka/WeatherApp"
+          href="https://github.com/Ivanceka/weather-react"
           target="_blank"
           rel="noreferrer"
         >
