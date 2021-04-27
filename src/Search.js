@@ -71,7 +71,7 @@ export default function Search() {
     axios.get(url).then(displayWeather);
   }
   return (
-    <div>
+    <div className="weather">
       <form className="row" onSubmit={handleSubmit}>
         <input
           className="col-9"
