@@ -1,6 +1,6 @@
 input,
 button {
-  border-radius: 5px;
+  border-radius: 1px;
 }
 h1 {
   margin-left: 30px;
@@ -18,4 +18,31 @@ li::first-letter {
 .units {
   position: relative;
   top: -10px;
+}
+form.col-8 {
+  max-width: 446px;
+  padding: 0;
+}
+input {
+  width: 446px;
+}
+form.col-1 {
+  max-width: 35px;
+  margin: 0;
+  padding: 0;
+}
+button.Search {
+  width: 35px;
+}
+form.col-3 {
+  max-width: 167px;
+  padding: 0;
+}
+button.currentCity {
+  width: 167px;
+}
+div.row.g-3 {
+  padding: 0;
+  margin: 10px;
+  text-align: center;
 }

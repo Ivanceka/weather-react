@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="mb-3">
-          <Search />
+          <Search defaultCity="New York" />
         </div>
         <Forecast />
       </div>
