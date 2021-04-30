@@ -17,6 +17,7 @@ export default function Search(props) {
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -30,8 +31,9 @@ export default function Search(props) {
   }
 
   function searchCity() {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b67289479aba88961c62d3725b06c5f0&units=metric`;
-    axios.get(url).then(displayWeather);
+    let apiKey = "b67289479aba88961c62d3725b06c5f0";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayWeather);
   }
 
   function handlePosition(position) {
