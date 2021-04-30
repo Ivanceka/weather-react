@@ -22,8 +22,11 @@ li::first-letter {
   position: relative;
   top: -30px;
 }
-.units a {
+.active {
   color: antiquewhite;
+}
+a {
+  color: rgb(14, 14, 88);
 }
 form.col-8 {
   max-width: 440px;
