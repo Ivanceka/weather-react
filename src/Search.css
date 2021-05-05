@@ -23,7 +23,7 @@ li::first-letter {
   top: -30px;
 }
 .active {
-  color: antiquewhite;
+  color: var(--primary-color);
 }
 a {
   color: rgb(14, 14, 88);
