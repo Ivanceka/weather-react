@@ -31,11 +31,30 @@ li::first-letter {
   color: var(--primary-color);
   opacity: 0.6;
 }
-form.col-8,
-form.col-1,
-form.col-3 {
+form.col-sm-8,
+form.col-sm-1,
+form.col-sm-3 {
   padding: 2px;
 }
 ul.probabilityPrecipitation {
   margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  form.col-sm-8,
+  form.col-sm-3 {
+    width: 45%;
+  }
+  form.col-sm-1 {
+    width: 10%;
+  }
+
+  li {
+    font-size: 20px;
+  }
+  h1,
+  h2 {
+    margin-top: 30px;
+    font-size: 40px;
+  }
 }

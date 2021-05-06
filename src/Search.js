@@ -55,7 +55,7 @@ export default function Search(props) {
     return (
       <div className="weather">
         <div className="row g-3">
-          <form className="col-8" onSubmit={handleSubmit}>
+          <form className="col-sm-8" onSubmit={handleSubmit}>
             <input
               placeholder="Enter a city"
               className="form-control"
@@ -64,14 +64,14 @@ export default function Search(props) {
               onChange={updateCity}
             />
           </form>
-          <form className="col-1" onClick={handleSubmit}>
+          <form className="col-sm-1" onClick={handleSubmit}>
             <button type="submit" className="Search form-control">
               <span role="img" aria-label="search">
                 🔍
               </span>
             </button>
           </form>
-          <form className="col-3" onClick={getCurrentPosition}>
+          <form className="col-sm-3" onClick={getCurrentPosition}>
             <button className="currentCity form-control" type="button">
               Current city
             </button>

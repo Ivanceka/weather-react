@@ -7,11 +7,11 @@ import ShowTemperature from "./ShowTemperature";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <div className="col-6">
+      <div className="col-sm-6">
         <h1>{props.data.city}</h1>
       </div>
       <div className="row">
-        <div className="col-6">
+        <div className="col-sm-6">
           <ul className="currentTime">
             <li>
               <WeatherIcon code={props.data.icon} size={52} />
@@ -25,7 +25,7 @@ export default function WeatherInfo(props) {
             </li>
           </ul>
         </div>
-        <div className="col-6">
+        <div className="col-sm-6">
           <ul className="probabilityPrecipitation">
             <li>{props.data.description}</li>
             <li>Humidity: {props.data.humidity}%</li>
