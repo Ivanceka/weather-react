@@ -58,3 +58,13 @@ ul.probabilityPrecipitation {
     font-size: 40px;
   }
 }
+@media (max-width: 576px) {
+  li,
+  h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+  ul {
+    padding-left: 0;
+  }
+}

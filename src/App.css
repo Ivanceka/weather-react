@@ -19,6 +19,7 @@
   .container {
     background-image: none;
     background-color: rgb(52, 87, 100);
+    margin: auto;
   }
   .App {
     width: auto;
