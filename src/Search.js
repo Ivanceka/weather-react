@@ -9,6 +9,7 @@ export default function Search(props) {
   const [weather, setWeather] = useState({ ready: false });
 
   function displayWeather(response) {
+    console.log(response.data.coord);
     setWeather({
       ready: true,
       coordinates: response.data.coord,
@@ -57,20 +58,21 @@ export default function Search(props) {
           <form className="col-8" onSubmit={handleSubmit}>
             <input
               placeholder="Enter a city"
+              className="form-control"
               autoComplete="off"
               autoFocus="on"
               onChange={updateCity}
             />
           </form>
-          <form className="col-1" onSubmit={handleSubmit}>
-            <button type="submit" className="Search">
+          <form className="col-1" onClick={handleSubmit}>
+            <button type="submit" className="Search form-control">
               <span role="img" aria-label="search">
                 🔍
               </span>
             </button>
           </form>
           <form className="col-3" onClick={getCurrentPosition}>
-            <button className="currentCity" type="button">
+            <button className="currentCity form-control" type="button">
               Current city
             </button>
           </form>
@@ -81,6 +83,6 @@ export default function Search(props) {
     );
   } else {
     searchCity();
-    return "Loading";
+    return "Loading...";
   }
 }

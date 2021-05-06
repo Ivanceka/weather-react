@@ -21,38 +21,21 @@ li::first-letter {
 .units {
   position: relative;
   top: -30px;
+  color: var(--primary-color);
 }
 .active {
   color: var(--primary-color);
+  opacity: 1;
 }
-a {
-  color: rgb(14, 14, 88);
+.notActive {
+  color: var(--primary-color);
+  opacity: 0.6;
 }
-form.col-8 {
-  max-width: 440px;
-  padding: 0;
-  margin: 0 2px;
-}
-input {
-  width: 440px;
-}
-form.col-1 {
-  max-width: 35px;
-  margin: 0;
-  padding: 0;
-}
-button.Search {
-  width: 35px;
-}
+form.col-8,
+form.col-1,
 form.col-3 {
-  max-width: 167px;
-  padding: 0;
+  padding: 2px;
 }
-button.currentCity {
-  width: 167px;
-}
-div.row.g-3 {
-  padding: 0;
-  margin: 10px;
-  text-align: center;
+ul.probabilityPrecipitation {
+  margin-top: 15px;
 }

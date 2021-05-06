@@ -19,7 +19,7 @@ export default function ShowTemperature(props) {
             °C
           </a>{" "}
           |{" "}
-          <a href="/" onClick={showFahrenheit}>
+          <a href="/" className="notActive" onClick={showFahrenheit}>
             °F
           </a>
         </span>
@@ -31,7 +31,7 @@ export default function ShowTemperature(props) {
       <span>
         <h2>{Math.round(fahrenheit)}</h2>
         <span className="units">
-          <a href="/" onClick={showCelsius}>
+          <a href="/" className="notActive" onClick={showCelsius}>
             °C
           </a>{" "}
           |{" "}
